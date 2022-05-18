@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="allgames.css">
+</head>
+<body>
+    <!-- navbar -->
+    <section >
+        <nav>
+            <a href="index.html"><img src="images/logo1.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <i class="fa-solid fa-square-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="allgames.html">ALL GAMES</a></li>
+                    <li><a href="about_games.html">ABOUT GAMING</a></li>
+                    <li><a href="loginpage/login.html">LOGIN</a></li>
+                    <li><a href="signup_page/signup.html">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+
+        <!-- START THE FEATURETTES -->
+        <h1 class="games-heading" >ALL GAMES</h1>
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 ">
+            <h2 class="featurette-heading box"><strong>2048</strong></h2>
+            <p class="lead">2048 is a game where you combine numbered tiles in order to gain a higher numbered tile.The rules are also simple. You just need to move the tiles and every time you move one, another tile pops up in a random manner anywhere in the box. When two tiles with the same number on them collide with one another as you move them, they will merge into one tile with the sum of the numbers written on them initially.</p>
+          </div>
+          <div class="col-md-4 " id="img1">
+            <a href="2048/index.html"><img src="games_images/2048.jpg" alt="2048"></a>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2 ">
+            <h2 class="featurette-heading box">Breakout</h2>
+            <p class="lead">Breakout is an arcade video game.In Breakout, a layer of bricks lines the top third of the screen and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. Using a single ball, the player must knock down as many bricks as possible by using the walls and/or the paddle below to hit the ball against the bricks and eliminate them. If the player's paddle misses the ball's rebound, they will lose a turn.</p>
+          </div>
+          <div class="col-md-5 order-md-1 " id = "img2">
+            <a href="Breakout/index.html"><img src="images/break-out-game.png" alt="breakout"></a>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-6 box">
+            <h2 class="featurette-heading">Hangman</h2></h2>
+            <p class="lead">Hangman is a quick and easy game for at least two people that requires nothing more than paper, a pencil, and the ability to spell. One player, the "host," makes up a secret word, while the other player tries to guess the word by asking what letters it contains. However, every wrong guess brings them one step closer to losing. Hangman can also be customized to make the game easier, harder, or educational, and there are apps and websites to play online if you would like. </p>
+          </div>
+          <div class="col-md-4" id="img3" >
+            <a href="hangman-game/index.html"><img src="games_images/hangman.jpg" alt="hangman"></a>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2 ">
+              <h2 class="featurette-heading box">Hextris</h2>
+              <p class="lead">Hextris is a simple reincarnation of Tetris in hexagon form. Meaning that colored lines will fall from six sides towards a central hexagon, and you need to rotate the hexagon to get the colors to match. When you eventually can't keep up, and the hexagon fills with colored lines, the game is over.</p>
+            </div>
+            <div class="col-md-4 order-md-1 " id="img4">
+              <a href="hextris-gh-pages/index.html"><img src="games_images/hextris.jpg" alt="hextris"></a>
+            </div>
+        </div>
+      
+        <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7 ">
+              <h2 class="featurette-heading box">Tic Tac Toe</h2></h2>
+              <p class="lead">Tic Tac Toe is traditionally played on a 3 x 3 grid. Players take turns placing a mark in one of the cells of the grid. The goal of the game is for players to position their marks so that they make a continuous line of three cells vertically, horizontally, or diagonally. An opponent can prevent a win by blocking the completion of the opponent's line. In our variant of the game, players placed objects on a board. In order to induce participants to produce utterances that were usable for analysis, participants had their own playing boards and faced away from each other, so that verbal communication was required. </p>
+            </div>
+            <div class="col-md-4" id="img3" >
+              <a href="TicTacToe/index.html"><img src="games_images/tictactoe.png" alt="tictactoe"></a>
+            </div>
+          </div>
+      
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2 ">
+              <h2 class="featurette-heading box">Memory Game</h2>
+              <p class="lead">The memory game is a common children's game played with a set of cards. The cards have a pictures on one side and each picture appears on two (or sometimes four) cards. The game starts with all the cards face down and players take turns to turn over two cards. If the two cards have the same picture, then they keep the cards, otherwise they turn the cards face down again. The winner is the person with the most cards when all the cards have been taken.</p>
+            </div>
+            <div class="col-md-5 order-md-1 " id="img4">
+              <a href="Memory_game/index.html"><img src="games_images/memory-game.png" alt="memory-game"></a>
+            </div>
+        </div>
+      
+        <hr class="featurette-divider">
+      
+    
+        <!-- /END THE FEATURETTES -->
+
+
+    <!-- footer -->
+    <div class="contact">
+        <footer>
+            <div class="footer">
+                <div class="row" id="social_contact">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Our Games</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+            
+                <div class="row">
+                Designed By: Shubham Maurya
+                </div>
+            </div>
+            </footer>
+    </div>
+</body>
+</html>
